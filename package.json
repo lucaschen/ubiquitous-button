@@ -1,0 +1,37 @@
+{
+  "name": "ubiquitous-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/App.js",
+  "scripts": {
+    "watch": "webpack-dev-server --colors --env=dev --hot --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/???/ubiquitous-button.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "babel-core": "~6.26.0",
+    "babel-loader": "~7.1.2",
+    "babel-plugin-module-resolver": "~3.0.0",
+    "babel-plugin-transform-class-properties": "~6.24.1",
+    "babel-polyfill": "~6.26.0",
+    "babel-preset-env": "~1.6.1",
+    "babel-preset-react": "~6.24.1",
+    "babel-preset-stage-3": "~6.24.1",
+    "classnames": "~2.2.6",
+    "css-loader": "~0.28.9",
+    "node-sass": "~4.7.2",
+    "react": "~16.3.2",
+    "react-dom": "~16.3.2",
+    "sass-loader": "~6.0.6",
+    "style-loader": "~0.20.1",
+    "webpack": "~3.10.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "~2.11.1"
+  }
+}

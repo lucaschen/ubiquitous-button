@@ -1,0 +1,47 @@
+$color-map: (
+  primary: #007bff,
+  primary-hover: #0069d9,
+  secondary: #6c757d,
+  secondary-hover: #5a6268,
+  success: #28a745,
+  success-hover: #218838,
+  danger: #dc3545,
+  danger-hover: #c82333,
+  warning: #e0a800,
+  warning-hover: #e0a800,
+  info: #17a2b8,
+  info-hover: #138496,
+  light: #f8f9fa,
+  light-hover: #e2e6ea,
+  dark: #343a40,
+  dark-hover: #23272b
+);
+
+$colors: primary secondary success danger warning info dark light;
+
+.button {
+  appearance: none;
+  border: 0;
+  border-radius: 0.25em;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 0.75em 1.1em;
+
+  &.-style {
+    @each $color in $colors {
+      &_#{$color} {
+        background-color: map-get($color-map, $color);
+        color: if($color == "light", black, white);
+
+        &:hover {
+          background-color: map-get($color-map, "#{$color}-hover");
+        }
+      }
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
